@@ -13,3 +13,11 @@
 
     window.open(waURL, "_blank");
   });
+
+  // Menangani event klik pada tombol menu mobile
+  document.getElementById('menuBtn').addEventListener('click', function() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    // Menyembunyikan atau menampilkan menu mobile
+    mobileMenu.classList.toggle('hidden');
+  });
+

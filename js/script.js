@@ -1,4 +1,12 @@
-  // Ambil semua tombol & badge keranjang
+  // Menangani event klik pada tombol menu mobile
+  document.getElementById('menuBtn').addEventListener('click', function() {
+    const mobileMenu = document.getElementById('mobileMenu');
+    // Menyembunyikan atau menampilkan menu mobile
+    mobileMenu.classList.toggle('hidden');
+  });
+
+
+// Ambil semua tombol & badge keranjang
   const cartButtons = document.querySelectorAll('[data-cart-button]');
   const cartCountBadges = document.querySelectorAll('[data-cart-count]');
   const mobileMenu = document.getElementById('mobileMenu');
