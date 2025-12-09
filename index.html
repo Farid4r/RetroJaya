@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toko Barang Antik - Keindahan Masa Lampau</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+
+<body class="bg-[#fdfaf4] text-gray-800">
+
+  <!-- NAVBAR -->
+
+  <header class="fixed inset-x-0 top-0 z-50 bg-[#281E18] text-white shadow-2xl">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold tracking-wide">RetroRaya</h1>
+      <nav id="menu" class="hidden sm:flex space-x-6">
+        <a href="home" class="hover:text-yellow-400">Beranda</a>
+        <a href="home.html" class="hover:text-yellow-400">Produk</a>
+        <a href="about.html" class="hover:text-yellow-400">Tentang</a>
+        <a href="contact.html" class="hover:text-yellow-400">Kontak</a>
+      </nav>
+      <button id="menuBtn" class="sm:hidden text-yellow-400 text-2xl focus:outline-none">☰</button>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="mobileMenu" class="hidden flex-col bg-[#281E18] text-white px-6 pb-4 space-y-2 md:hidden">
+      <a href="#home" class="hover:text-yellow-400 px-2">Beranda</a>
+      <a href="#produk" class="hover:text-yellow-400 px-2">Produk</a>
+      <a href="about.html" class="hover:text-yellow-400 px-2">Tentang</a>
+      <a href="contact.html" class="hover:text-yellow-400 px-2">Kontak</a>
+    </div>
+  </header>
+
+  <!--  HERO SECTION -->
+    
+<section id="home"class="relative bg-cover bg-center h-[55vh] bg-[url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kepler-world.jpg/1920px-Kepler-world.jpg)]">
+  <div class="absolute inset-0 bg-[rgba(0,0,0,0.8)] flex flex-col justify-center items-center text-center text-white">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4 text-gray-100">Keindahan dari Masa Lampau</h2>
+    <p class="text-lg md:text-xl mb-6 text-gray-100 ">Koleksi barang antik eksklusif untuk pecinta seni dan sejarah</p>
+    <a href="#produk" class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 px-6 rounded-lg ">Lihat Koleksi</a>
+  </div>
+</section>
+
+
+  <!--  PRODUK SECTION -->
+  <section id="produk" class="py-16 bg-[#f8f3ec]">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-10 text-left">Koleksi Barang Antik</h3>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-auto">
+        <!-- Card Produk 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="https://assets.kompasiana.com/items/album/2024/09/30/madilog-66fa13d6ed6415285518e612.jpg?t=o&v=740&x=416" alt="Vas Antik" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg mb-2">Madilog Cetakan Pertama</h4>
+            <p class="text-gray-600 text-sm mb-3">Madilog merupakan sintesis pemikiran materialisme dialektis yang mencoba menjembatani filsafat barat dengan kondisi sosial-politik Indonesia pada masa itu.</p>
+            <span class="text-yellow-700 font-semibold text-lg">Rp 2.500.000</span>
+          </div>
+        </div>
+
+        <!-- Card Produk 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="mona_lisa" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg mb-2">Lukisa Mona Lisa</h4>
+            <p class="text-gray-600 text-sm mb-3"> lukisan minyak di atas kayu popular yang dibuat oleh Leonardo da Vinci pada abad ke-16.</p>
+            <span class="text-yellow-700 font-semibold text-lg">Rp 4.800.000</span>
+          </div>
+        </div>
+
+        <!-- Tambah card lain di sini -->
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Jam Antik" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg mb-2">Van Gogh - Starry Night</h4>
+            <p class="text-gray-600 text-sm mb-3">lukisan minyak di kanvas karya pelukis pasca-Impresionis Belanda Vincent van Gogh.</p>
+            <span class="text-yellow-700 font-semibold text-lg">Rp 4.800.000</span>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="img/Promosi.jpg" alt="Jam Antik" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg mb-2">Jam Dinding Kuno</h4>
+            <p class="text-gray-600 text-sm mb-3">Jam kayu berukir tangan, buatan Belanda 1900-an.</p>
+            <span class="text-yellow-700 font-semibold text-lg">Rp 4.800.000</span>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="img/Promosi.jpg" alt="Jam Antik" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg mb-2">Jam Dinding Kuno</h4>
+            <p class="text-gray-600 text-sm mb-3">Jam kayu berukir tangan, buatan Belanda 1900-an.</p>
+            <span class="text-yellow-700 font-semibold text-lg">Rp 4.800.000</span>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="img/Promosi.jpg" alt="Jam Antik" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg mb-2">Jam Dinding Kuno</h4>
+            <p class="text-gray-600 text-sm mb-3">Jam kayu berukir tangan, buatan Belanda 1900-an.</p>
+            <span class="text-yellow-700 font-semibold text-lg">Rp 4.800.000</span>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="img/Promosi.jpg" alt="Jam Antik" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg mb-2">Jam Dinding Kuno</h4>
+            <p class="text-gray-600 text-sm mb-3">Jam kayu berukir tangan, buatan Belanda 1900-an.</p>
+            <span class="text-yellow-700 font-semibold text-lg">Rp 4.800.000</span>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="img/Promosi.jpg" alt="Jam Antik" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg mb-2">Jam Dinding Kuno</h4>
+            <p class="text-gray-600 text-sm mb-3">Jam kayu berukir tangan, buatan Belanda 1900-an.</p>
+            <span class="text-yellow-700 font-semibold text-lg">Rp 4.800.000</span>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="img/Promosi.jpg" alt="Jam Antik" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg mb-2">Jam Dinding Kuno</h4>
+            <p class="text-gray-600 text-sm mb-3">Jam kayu berukir tangan, buatan Belanda 1900-an.</p>
+            <span class="text-yellow-700 font-semibold text-lg">Rp 4.800.000</span>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="img/Promosi.jpg" alt="Jam Antik" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg mb-2">Jam Dinding Kuno</h4>
+            <p class="text-gray-600 text-sm mb-3">Jam kayu berukir tangan, buatan Belanda 1900-an.</p>
+            <span class="text-yellow-700 font-semibold text-lg">Rp 4.800.000</span>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="img/Promosi.jpg" alt="Jam Antik" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg mb-2">Jam Dinding Kuno</h4>
+            <p class="text-gray-600 text-sm mb-3">Jam kayu berukir tangan, buatan Belanda 1900-an.</p>
+            <span class="text-yellow-700 font-semibold text-lg">Rp 4.800.000</span>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="img/Promosi.jpg" alt="Jam Antik" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <h4 class="font-bold text-lg mb-2">Jam Dinding Kuno</h4>
+            <p class="text-gray-600 text-sm mb-3">Jam kayu berukir tangan, buatan Belanda 1900-an.</p>
+            <span class="text-yellow-700 font-semibold text-lg">Rp 4.800.000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- 🔸 FOOTER -->
+  <footer class="bg-[#3a2e25] text-white py-6 text-center">
+    <p>&copy; 2025 RetroRaya.</p>
+  </footer>
+
+</body>
+</html>

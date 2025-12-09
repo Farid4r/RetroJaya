@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>tentang</title>
+</head>
+
+<body class="bg-[#fdfaf4] text-gray-800">
+    <header class="fixed inset-x-0 top-0 z-50 bg-[#281E18] text-white shadow-2xl">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold tracking-wide">RetroRaya</h1>
+            <nav id="menu" class="hidden sm:flex space-x-6">
+                <a href="home.html" class="hover:text-yellow-400">Beranda</a>
+                <a href="home.html" class="hover:text-yellow-400">Produk</a>
+                <a href="about.html" class="hover:text-yellow-400">Tentang</a>
+            </nav>
+            <button id="menuBtn" class="sm:hidden text-yellow-400 text-2xl focus:outline-none">☰</button>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobileMenu" class="hidden flex-col bg-[#281E18] text-white px-6 pb-4 space-y-2 md:hidden">
+            <a href="#home" class="hover:text-yellow-400 px-2">Beranda</a>
+            <a href="#produk" class="hover:text-yellow-400 px-2">Produk</a>
+            <a href="about.html" class="hover:text-yellow-400 px-2">Tentang</a>
+        </div>
+    </header>
+
+    <section id="tentang" class="py-25 text-center">
+        <h3 class="text-3xl font-bold mb-8">Tentang Kami</h3>
+        <div class="container mx-auto px-6 flex flex-wrap justify-center items-center gap-6 mb-8 p-10">
+            
+            <div class="">
+                <img src="img/aan.png" alt="Barang Antik"
+                    class="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full shadow-md object-cover mx-auto">
+                <h4 class="font-semibold text-2xl text-center mt-4">Farhan Fadhilla</h4>
+                <p class="font-thin text-center mt-1">Komisaris Utama</p>
+            </div>
+            <div>
+                <img src="img/mamat.png" alt="Barang Antik"
+                    class="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full shadow-md object-cover mx-auto">
+                <h4 class="font-semibold text-2xl text-center mt-4">Ahmad Padli</h4>
+                <p class="font-thin text-center mt-1">Komisaris</p>
+            </div>
+            <div>
+                <img src="img/farid.png" alt="Barang Antik"
+                    class="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full shadow-md object-cover mx-auto">
+                <h4 class="font-semibold text-2xl text-center mt-4">Farid Nuhgraha</h4>
+                <p class="font-thin text-center mt-1">Ceo</p>
+            </div>
+            <div>
+                <img src="img/maudi.png" alt="Barang Antik"
+                    class="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full shadow-md object-cover mx-auto">
+                <h4 class="font-semibold text-2xl text-center mt-4">Maudy Tri Kusuma</h4>
+                <p class="font-thin text-center mt-1">Ceo</p>
+            </div>
+        </div>
+        <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed p-6">
+            RetroRaya berdiri pada tahun 2025 sebagai hasil dari proyek pembuatan website e-commerce dalam mata kuliah
+            Digital Entrepreneur. Kami hadir untuk mengumpulkan dan menghadirkan koleksi barang antik serta kuno dari
+            berbagai era, mulai dari Eropa klasik hingga Asia kuno.
+        </p>
+        </div>
+        <section id="kontak" class="p-20">
+            <div class="container mx-auto text-center px-6 py">
+                <h3 class="text-3xl font-bold mb-8">Hubungi Kami</h3>
+
+                <form id="waForm" class="max-w-lg mx-auto text-left space-y-4">
+                    <input id="nama" type="text" placeholder="Nama Anda"
+                        class="w-full border border-gray-300 p-3 rounded-lg">
+                    <input id="email" type="email" placeholder="Email Anda"
+                        class="w-full border border-gray-300 p-3 rounded-lg">
+                    <textarea id="pesan" placeholder="Pesan Anda"
+                        class="w-full border border-gray-300 p-3 rounded-lg h-32"></textarea>
+
+                    <button type="submit"
+                        class="bg-yellow-600 hover:bg-yellow-700 text-white px-6 py-3 rounded-lg w-full font-semibold">
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </section>
+      <footer class="bg-[#281E18] text-white py-5 px-6">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center">
+        <div>
+          <p class="text-sm">© 2025 kelompok2. All rights reserved.</p>
+        </div>
+        <div class="flex space-x-4">
+          <a href="#" class="text-white-400 hover:text-white">Facebook</a>
+          <a href="#" class="text-white-400 hover:text-white">Twitter</a>
+          <a href="#" class="text-white-400 hover:text-white">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="js/kontak.js"></script>
+</body>
+
+</html>
